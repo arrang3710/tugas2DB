@@ -15,12 +15,12 @@ const server = http.createServer((request, response) =>{
         response.write("<a href='/copaAmerika2021'>Final Copa Amerika 2021</a><br>");
         response.write("<a href='/euro2021'>Final Euro 2021</a><br>");
         response.end();
-    }else if(request.url ==='/copaamerika' ) {
+    }else if(request.url ==='/copaAmerika2021' ) {
         response.statusCode = 200;
         response.setHeader('Content-Type', 'text/html');
         response.write('Brazil vs Argentina 11 juli 2021');
         response.end();
-    }else if(request.url ==='/euro'){
+    }else if(request.url ==='/euro2021'){
         response.statusCode = 200;
         response.setHeader('Content-Type', 'text/html');
         response.write('Inggris vs Italia 12 juli 2021');
